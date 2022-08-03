@@ -1,0 +1,15 @@
+.add-menu h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.add-menu input {
+    border: none;
+    border-bottom: 2px solid #FF0303;
+    border-radius: 0;
+}
+
+.add-menu input:focus {
+    border: none;
+    outline: none;
+}

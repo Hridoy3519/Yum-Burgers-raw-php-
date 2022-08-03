@@ -1,0 +1,219 @@
+/* Common Utility */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.burger-customized-btn {
+    background-color: var(--primary-page-color);
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.burger-customized-btn-white {
+    background-color: white;
+    color: var(--primary-page-color);
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-page-color);
+    /* height: 50px; */
+}
+
+/* Navbar */
+
+:root {
+    --nav-link-color: #090909;
+    --primary-paragrapg-color: #BEBEBE;
+    --primary-page-color: #FF0303;
+    --primary-text-color: #464444;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.nav-item a {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* color: var(--nav-link-color); */
+    color: var(--primary-page-color);
+}
+
+nav .cart-portion p {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Banner Section */
+
+.banner-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.banner-section p {
+    color: var(--primary-paragrapg-color);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.banner-section h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 62px;
+    color: #FAFF00;
+}
+
+.banner-section .sassy-burger-des {
+    font-weight: 600;
+    font-size: 26px;
+    color: white;
+}
+
+.red-bg {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--primary-page-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Menu Section */
+
+.menu-section {
+    margin-top: 200px;
+}
+
+.menu-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--primary-text-color);
+}
+
+.menu-section .card .card-img-top {
+    width: 270px;
+    height: 306px;
+}
+
+.menu-section .card .card-title {
+    font-weight: 800;
+    font-size: 34px;
+    text-align: center;
+    color: var(--primary-page-color);
+}
+
+.menu-section .card .card-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    color: #989898;
+}
+
+/* Rectangle Section */
+
+.rectangle-section {
+    margin-top: 150px;
+}
+
+.rectangle-bg-1 {
+    background-image: url('images/Rectangle-Red.png');
+}
+
+.rectangle-bg-2 {
+    background-image: url('images/Rectangle-Yellow.png');
+}
+
+.rectangle-bg-3 {
+    background-image: url('images/Rectangle-orange.png');
+}
+
+.rectangle-bg-1 h4,
+.rectangle-bg-2 h4,
+.rectangle-bg-3 h4 {
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 62px;
+}
+
+/* Social Section */
+
+.social-section {
+    margin-top: 100px;
+}
+
+.social-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--primary-text-color);
+}
+
+.social-section p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 46px;
+    letter-spacing: -0.02em;
+    color: var(--primary-paragrapg-color);
+}
+
+.social-box {
+    position: relative;
+}
+
+.social-box .socialmedia-user {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+/* Footer */
+
+footer p {
+    color: var(--primary-paragrapg-color);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 576px) {
+    .red-bg {
+        display: none;
+    }
+
+    .sassy-burger {
+        display: none;
+    }
+
+    nav .cart-portion p {
+        color: var(--nav-link-color);
+    }
+
+    .rectangle-bg-2 img,
+    .rectangle-bg-1 img,
+    .rectangle-bg-3 img {
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .red-bg {
+        display: none;
+    }
+
+    .sassy-burger {
+        display: none;
+    }
+
+    .cart-portion p {
+        color: var(--nav-link-color);
+    }
+}
