@@ -3,10 +3,10 @@ function formValidate() {
     console.log('Hello');
     let error = "";
     /* validation of first name last name */
-    const firstName = document.getElementById("fname").value;
-    const lastName = document.getElementById("lname").value;
-    const fullName = firstName + lastName;
-    const regaxName = /[a-zA-Z][A-Za-z0-9]{6,40}/g
+    // const firstName = document.getElementById("fname").value;
+    // const lastName = document.getElementById("lname").value;
+    const fullName = document.getElementById("name").value;
+    const regaxName = /[a-zA-Z][A-Za-z 0-9]{6,40}/g
     //console.log(fullName.match(regaxName).join(''))
     if (!(fullName.match(regaxName)?.join('') == fullName)) error = "Name should only contain characters & digits and should be atleast 6 character long";
 
@@ -18,14 +18,14 @@ function formValidate() {
 
     // Email validation
     const email = document.getElementById('email').value;
-    const regaxEmail = /[0-9]{10}_(cse|llb|bba)@lus\.ac\.bd/g;
-    console.log(email);
+    const regaxEmail = /(cse|llb|bba)_[0-9]{10}@lus\.ac\.bd/g;
+
     if (!(email.match(regaxEmail)?.join('') == email)) error = "Only valid Leading University email is accepted";
 
 
     //Password validation
-    const pass = document.getElementById('pass').value;
-    const cpass = document.getElementById('cpass').value;
+    const pass = document.getElementById('password').value;
+    const cpass = document.getElementById('cpassword').value;
     if (pass == cpass) {
         const regpass = /(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}/
         if (!(pass.match(regpass)?.join('') == pass)) error = "Password should contain a Uppercase letter, 1 digit, 1 special case letter & should be 8 characters long";
@@ -36,5 +36,6 @@ function formValidate() {
 
     document.getElementById('par').innerHTML = error;
 
-    if (!error) alert("Successfully Registered")
+    if (!error) return true;
+    else return false;
 }
