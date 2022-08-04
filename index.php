@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        echo "<script>location.href = 'login.html'</script>";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +60,7 @@
                             <a class="nav-link white-nav-link" href="login.html">Login</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link white-nav-link" href="register.html">Register</a>
+                            <a class="nav-link white-nav-link" href="logout.php">Logout</a>
                         </li>
 
                     </ul>
