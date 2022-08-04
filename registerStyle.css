@@ -1,0 +1,21 @@
+.redirect-signin a {
+    text-decoration: none;
+    color: #FF0303;
+}
+
+@media only screen and (max-width: 576px) {
+    .left-row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .left-row img {
+        width: 100%;
+    }
+
+    .redirect-signin,
+    .redirect-arrow {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

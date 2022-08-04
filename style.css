@@ -40,6 +40,17 @@ nav {
     text-transform: uppercase;
     /* color: var(--nav-link-color); */
     color: var(--primary-page-color);
+    /* color: white; */
+}
+
+.nav-item .white-nav-link {
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-item .white-nav-link:hover {
+    background-color: white;
+    color: var(--primary-page-color);
 }
 
 nav .cart-portion p {

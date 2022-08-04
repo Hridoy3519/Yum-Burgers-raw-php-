@@ -48,10 +48,27 @@
                         </li>
 
                     </ul>
-                    <div class="d-flex align-items-center me-3 cart-portion">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link white-nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link white-nav-link" href="register.html">Register</a>
+                        </li>
+
+                    </ul>
+                    
+                    <!-- <div class="d-flex align-items-center me-3 cart-portion">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
                         <p class="me-5">+1 - 650 - 547 - 9864</p>
                         <img src="images/Cart.png" alt="" width="61" height="71">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
