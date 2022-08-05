@@ -44,13 +44,13 @@
                             <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Order Now</a>
+                            <a class="nav-link" href="#orderNow">Order Now</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="addMenu.html">Add Menu</a>
+                            <a class="nav-link" href="addMenu.php">Add Menu</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Location</a>
+                            <a class="nav-link" href="#socials">Socials</a>
                         </li>
 
                     </ul>
@@ -123,7 +123,7 @@
 
         <!-- Rectangle Sections -->
 
-        <section class="rectangle-section container-fluid px-md-5 mb-5">
+        <section id="orderNow" class="rectangle-section container-fluid px-md-5 mb-5">
             <div class="row row-cols-1 row-cols-md-3 g-0">
                 <div class="col">
                     <div class="rectangle-bg-1 border-0 d-flex justify-content-between align-items-end pb-3 ps-2">
@@ -162,7 +162,7 @@
         </section>
 
         <!-- Social Section -->
-        <section class="social-section container-fluid px-md-5 mb-5">
+        <section id="socials" class="social-section container-fluid px-md-5 mb-5">
             <h1 class="text-center">Follow us on Instagram</h1>
             <p class="text-center">For the latest news, updates and inspirational recipes, <br> follow us on Instagram
                 to

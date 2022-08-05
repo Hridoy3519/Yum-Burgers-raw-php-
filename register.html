@@ -72,7 +72,7 @@
                     </div>
                     <div class="w-100 mt-5 add-menu">
                         <h1 class="mb-4">Register Now</h1>
-                        <form action="registerAction.php" method="post">
+                        <form action="registerAction.php" onsubmit="return formValidate()" method="post">
                             <div class="form-floating mb-3">
                                 <input required type="text" class="form-control" id="name" name="name"
                                     placeholder="name@example.com">

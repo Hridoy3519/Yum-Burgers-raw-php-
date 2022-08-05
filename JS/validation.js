@@ -36,6 +36,6 @@ function formValidate() {
 
     document.getElementById('par').innerHTML = error;
 
-    if (!error) return true;
-    else return false;
+    if (error) return false;
+    else true;
 }
